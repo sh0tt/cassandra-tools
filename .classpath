@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="bootstrap"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/jstl-1.1.2.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/logback-classic-0.9.15.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/logback-core-0.9.15.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/slf4j-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/standard.jar"/>
+	<classpathentry kind="lib" path="lib/geronimo-servlet_2.5_spec-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/sdloader-jsp21.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/antlr-3.1.3.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/apache-cassandra-0.6.0-beta3.jar" sourcepath="/cassandra-0.6.0-beta3"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/avro-1.2.0-dev.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/clhm-production.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/google-collections-1.0.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/high-scale-lib.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/libthrift-r917130.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/commons-0.7.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/t2-0.7.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="webapp/WEB-INF/lib/gson-1.4.jar"/>
+	<classpathentry kind="output" path="webapp/WEB-INF/classes"/>
+</classpath>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>Cassandra viewer</display-name>
+	<context-param>
+		<param-name>t2.encoding</param-name>
+		<param-value>UTF-8</param-value>
+	</context-param>
+	<context-param>
+		<param-name>cassandra.host</param-name>
+		<param-value>localhost</param-value>
+	</context-param>
+	<context-param>
+		<param-name>cassandra.port</param-name>
+		<param-value>9160</param-value>
+	</context-param>
+	<context-param>
+		<param-name>cassandra.jmx.port</param-name>
+		<param-value>8080</param-value>
+	</context-param>
+	<filter>
+		<filter-name>t2</filter-name>
+		<filter-class>org.t2framework.t2.filter.T2Filter</filter-class>
+		<init-param>
+			<param-name>t2.rootpackage</param-name>
+			<param-value>org.t2framework.cassandra.tools</param-value>
+		</init-param>
+		<init-param>
+			<param-name>t2.exclude-resources</param-name>
+			<param-value>css, js, png, gif, jsp, jar</param-value>
+		</init-param>
+		<init-param>
+			<param-name>t2.components</param-name>
+			<param-value>org.t2framework.cassandra.tools.CassndraClientPlugin</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>t2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+</web-app>
