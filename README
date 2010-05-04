@@ -1,0 +1,32 @@
+Cassandra-tools -Simple REST-like web-based tools for development purpose-
+
+Cassandra-tools is a simple web-based tools for development with Cassandra.
+It uses JMX internally so that everyone just hit REST-like url and gets JSON as result,
+or we will create simple search for ColumnFamily/SuperColumn.
+
+Usage sample:
+ http://localhost:8090/cassandra-tools/show/liveNodes -> gets live nodes as JSON.
+ http://localhost:8090/cassandra-tools/show/token -> gets token as JSON.
+ http://localhost:8090/cassandra-tools/show/keyspace/${YOUR_KEYSPCE} -> gets your keyspace information as JSON.
+
+Response sample:
+If you execute command(curl, wget or whatever) to get Keyspace1 information like:
+ curl http://localhost:8090/cassandra-tools/show/keyspace/Keyspace1
+
+You get like:
+{
+     "Standard1" : {
+           "CompareWith" : "org.apache.cassandra.db.marshal.BytesType", 
+             "Desc" : "Keyspace1.Standard1\nColumn Family Type: Standard\nColumns Sorted By: org.apache.cassandra.db.marshal.BytesType@1996e136\n", 
+               "Type" : "Standard"
+                },
+     ... 
+}
+
+
+
+
+Cassandra-tools is based on these framework and tools:
+ -T2 webframework http://code.google.com/p/t-2/
+ -SDLoader, simple servlet container http://code.google.com/p/sdloader/
+
